@@ -1,8 +1,11 @@
+/*Colors*/
+
 :root {
   --main-color-text: #757575;
   --title-color-text: #212121;
   --white-color-text: #ffffff;
   --bgd-accent-color: #2f303a;
+
   --bgd-button: #2196f3;
   --bgd-button-filter: #f5f4fa;
 }
@@ -11,8 +14,37 @@ body {
   color: var(--main-color-text);
   font-family: "Roboto", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* hovers */
@@ -27,6 +59,17 @@ body {
 }
 
 /* header */
+.header  {
+  height: 80px;
+  color: var(--white-color-text);
+  border-bottom: 1px solid #ececec;
+}
+.flex-nav {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
 
 .nav-link,
 .contact-link-top {
@@ -42,6 +85,24 @@ body {
   line-height: 1.14;
 
   text-decoration: none;
+}
+.nav {
+  display: flex;
+}
+
+.nav-page.list {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+
+.nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+.nav-link,
+.contact-header-link {
+  letter-spacing: 0.02em;
 }
 
 /* logo */
@@ -64,6 +125,24 @@ body {
 }
 
 /* top contacts */
+.contact-header.list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contact-header-link {
+  text-decoration: none;
+
+  color: var(--main-color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  display: block;
+}
 .contact-link-top {
   color: var(--main-color-text);
   font-weight: 500;
