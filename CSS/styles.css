@@ -166,7 +166,8 @@ img {
 /* Main */
 
 .bgd-hero {
-  padding: 100px 0;
+  padding: 150px 0;
+  
 
   background-color: var(--bgd-accent-color);
 }
@@ -313,7 +314,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
 }
-.address {
+.adress {
   font-style: normal;
   margin-top: 20px;
 }
