@@ -37,12 +37,12 @@
         </nav>
         <ul class="contact-header list">
           <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-link-header"
+            <a href="mailto:info@devstudio.com" class="contact-header-link"
               >info@devstudio.com</a
             >
           </li>
           <li class="contact-item">
-            <a href="tel:+380961111111" class="contact-link-header"
+            <a href="tel:+380961111111" class="contact-header-link"
               >+38 096 111 11 11</a
             >
           </li>
@@ -52,130 +52,158 @@
 
     <!--main-->
     <main>
-      <section class="projects-bloc">
-        <h1>Projects</h1>
-        <ul class="filter list">
-          <li><button type="button" class="filter-button">Усі</button></li>
-          <li>
-            <button type="button" class="filter-button">Веб-сайти</button>
-          </li>
-          <li><button type="button" class="filter-button">Додатки</button></li>
-          <li><button type="button" class="filter-button">Дизайн</button></li>
-          <li>
-            <button type="button" class="filter-button">Маркетинг</button>
-          </li>
-        </ul>
-        <!-- projects -->
-        <ul class="projects-row list">
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/laptop.jpg"
-                alt="Website on laptop"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Технокряк</h2>
-              <p class="project-desc">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/basketball.jpg"
-                alt="two basketball players"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-              <p class="project-desc">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/seafood.jpg"
-                alt="seafood restaurant logo"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Ресторан Seafood</h2>
-              <p class="project-desc">Додаток</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/headphones.jpg"
-                alt="headphones"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Проєкт Prime</h2>
-              <p class="project-desc">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/boxes.jpg"
-                alt="one white box and one brown box"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Проєкт Boxes</h2>
-              <p class="project-desc">Додаток</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/imac.jpg"
-                alt="website on imac"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Inspiration has no Borders</h2>
-              <p class="project-desc">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/book.jpg"
-                alt="pages in a book"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Видання Limited Edition</h2>
-              <p class="project-desc">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/price-tag.jpg"
-                alt="label teg"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Проєкт LAB</h2>
-              <p class="project-desc">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="project" href="">
-              <img
-                src="./images/portfolio/laptop2.jpg"
-                alt="print on laptop"
-                width="370"
-                height="294"
-              />
-              <h2 class="project-title">Growing Business</h2>
-              <p class="project-desc">Додаток</p>
-            </a>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="section">
+          <h1 class="visual-hidden">Projects</h1>
+          <ul class="filter list">
+            <li class="filter-item">
+              <button type="button" class="filter-button">Усі</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Веб-сайти</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Додатки</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- projects -->
+          <ul class="projects list">
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/laptop.jpg"
+                  alt="вебсайт на компьютері"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/basketball.jpg"
+                  alt="два гравця в баскетбол"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/seafood.jpg"
+                  alt="seafood ресторан логотип"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="project-desc">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/headphones.jpg"
+                  alt="навушники"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Проєкт Prime</h2>
+                  <p class="project-desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/boxes.jpg"
+                  alt="одна біла і коричнева коробки"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Проєкт Boxes</h2>
+                  <p class="project-desc">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/imac.jpg"
+                  alt="сайт на аймаку"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="project-desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/book.jpg"
+                  alt="сторінки в книжці"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Видання Limited Edition</h2>
+                  <p class="project-desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/price-tag.jpg"
+                  alt="цінник"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Проєкт LAB</h2>
+                  <p class="project-desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a class="project-link" href="">
+                <img
+                  src="./images/portfolio/laptop2.jpg"
+                  alt="робота за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-content">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="project-desc">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -183,7 +211,9 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="index.html"><span class="web">Web</span>Studio</a>
+        <a class="logo white" href="index.html"
+          ><span class="web">Web</span>Studio</a
+        >
         <adress class="adress">
           <ul class="contact-footer list">
             <li>
