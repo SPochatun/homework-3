@@ -32,6 +32,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.visual-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .list {
   list-style: none;
 }
@@ -49,17 +62,17 @@ img {
 
 /* hovers */
 
-.nav-link:hover,
-.nav-link:focus,
-.contact-top:hover,
-.contact-top:focus,
-.contact-bot:hover,
-.contact-bot:focus {
+.nav-page.list :hover,
+.nav-page.list :focus,
+.contact-header.list :hover,
+.contact-header.list :focus,
+.contact-footer-list :hover,
+.contact-footer-list :focus {
   color: var(--bgd-button);
 }
 
 /* header */
-.header  {
+.header {
   height: 80px;
   color: var(--white-color-text);
   border-bottom: 1px solid #ececec;
@@ -70,9 +83,8 @@ img {
   align-items: center;
 }
 
-
 .nav-link,
-.contact-link-top {
+.contact-link-header {
   letter-spacing: 0.02em;
 }
 
@@ -96,7 +108,6 @@ img {
   align-items: center;
 }
 
-
 .nav-item:not(:first-child) {
   margin-left: 50px;
 }
@@ -108,7 +119,7 @@ img {
 /* logo */
 
 .logo {
-  color: #000;
+  color: #000000;
 
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
@@ -143,7 +154,7 @@ img {
   line-height: 1.14;
   display: block;
 }
-.contact-link-top {
+.contact-link-header {
   color: var(--main-color-text);
   font-weight: 500;
   font-size: 14px;
@@ -153,17 +164,27 @@ img {
 
 /* Main */
 
-.bgd-main {
+.bgd-hero {
+  padding: 200px 0;
+
   background-color: var(--bgd-accent-color);
 }
 
+.bgd-hero > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .hero-title {
+  margin-bottom: 30px;
+  width: 696px;
   color: var(--white-color-text);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -190,9 +211,23 @@ img {
 .button:active {
   background-color: #188ce8;
 }
-/* Section peculiarity */
+/* Section peculiarities */
 
+.flex-peculiarities {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-peculiarities .list {
+  width: 270px;
+}
+
+.flex-peculiarities .list:not(:last-child) {
+  margin-right: 30px;
+}
 .subtitle {
+  margin-bottom: 10px;
+  line-height: 1.14;
+
   color: var(--title-color-text);
   font-weight: 700;
   font-size: 14px;
@@ -200,7 +235,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.post {
+.description {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -208,6 +243,14 @@ img {
 
 /* Section works img */
 
+.work {
+  padding-top: 0%;
+}
+
+.flex-work {
+  display: flex;
+  justify-content: space-between;
+}
 .title-work,
 .title-team {
   color: var(--title-color-text);
@@ -215,12 +258,34 @@ img {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /*  Section team */
 
 .team {
   background-color: #f5f4fa;
+
+  text-align: center;
+}
+.flex-team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card {
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .name {
   color: var(--title-color-text);
@@ -234,31 +299,45 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 /* Footer */
 
 .address {
   font-style: normal;
+  margin-top: 20px;
 }
 
-.footer-section {
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--bgd-accent-color);
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
+.address {
+  font-style: normal;
+  margin-top: 20px;
+}
 
-.contact-link-bot {
+.contact-footer-link {
   color: var(--main-color-text);
   font-size: 14px;
   line-height: 1.14;
-  text-decoration: none;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-.footer-section > a,
+.footer > .logo,
 .map-link {
   color: var(--white-color-text);
+}
+
+.footer-email-item,
+.footer-tel-item {
+  margin-top: 9px;
 }
 
 /* 2 Main Portfolio */
