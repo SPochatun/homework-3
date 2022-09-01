@@ -50,6 +50,7 @@ img {
   list-style: none;
 }
 .container {
+  box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -126,7 +127,7 @@ img {
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.92;
+  line-height: 1.19;
 
   text-decoration: none;
 }
@@ -166,7 +167,7 @@ img {
 /* Main */
 
 .bgd-hero {
-  padding: 150px 0;
+  padding: 200px 0;
 
   background-color: var(--bgd-accent-color);
 }
@@ -331,10 +332,11 @@ img {
   color: var(--white-color-text);
 }
 .logo.white {
+  display: block;
   color: var(--white-color-text);
   margin-bottom: 20px;
 }
-.footer-email-item,
+.footer-mail-item,
 .footer-tel-item {
   margin-top: 9px;
 }
